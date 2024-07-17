@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hee{
+            /* background-color: #17acca; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .reviw-box>.box>img{
+            width: 20px;
+        }
+        body{
+           /* margin-left: 15%; */
+           align-content: center;
+           /* width: 100vw; */
+           /* background-color: brown; */
+        }
+        .section-1{
+            background-image: url(assets/background.png);
+            background-repeat:no-repeat;
+            height: 90vh;
+            width:70vw ;
+            display: flex;
+            flex-direction: column;
+            justify-items:center ;
+            align-items: center;
+            /* background-color:aquamarine; */
+        }
+        
+        nav{
+            display: flex;
+            justify-content: space-around;
+            color: white;
+            width: 70vw;
+            padding-top: 10px;
+        }
+        nav>.brandname{
+            font-weight: bold;
+            font-size: x-large;
+        }
+        .brandname>.nav-bar-nav{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+        .nav-bar-nav>span{
+            margin-left: 10px;
+        }
+        nav>button{
+            background-color: #17acca;
+            width: 10vw;
+            height: 5vh;
+            border: none;
+            color: white;
+        }
+        .enq{
+            display: flex;
+        }
+        .heading{
+            display: flex;
+            flex-direction: column;
+            width: 50%; 
+            color: white;
+            padding-top: 20vh;
+            justify-content: center;
+            align-items: center;
+            /* width: 20%; */
+        }
+        .form{
+            width: 50%;
+        }
+        
+        .heading>h1{
+            font-weight: bolder;
+            font-size: 30px;
+            width: 40%;
+
+        }
+        .heading>p{
+            width: 40%;
+        }
+        .more>.but-1{
+            background-color: #17acca;
+            border: none;
+            margin-top: 6vh;
+            width: 9vw;
+            height: 5vh;
+            border-radius: 30px;
+            color: white;
+            font-weight:bold;
+        }
+        .more>.but-2{
+
+            background-color: transparent;
+            border: none;
+            margin-top: 6vh;
+            width: 9vw;
+            height: 5vh;
+            border-radius: 30px;
+            color: white;
+            font-weight: bold;
+            border: 1px solid white;
+        }
+        .form{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+            width: 40%;
+            height: 60vh;
+            border-radius: 10px;
+            margin-top: 10vh;
+            margin-left: 8vw;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        .form>form>label{
+            margin:10px 0px;
+        }
+        .form>form>input{
+            height: 2vh;
+        }
+        
+        .form>form>button{
+            background-color: #17acca;
+            border: none;
+            margin-top: 3vh;
+            height: 5.5vh;
+            border-radius: 20px;
+            color: white;
+            font-weight: 600;
+        }
+        .section-two{
+            /* margin-right: 5vw; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .leading-medicine{
+            width: 22vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: -30px;
+        }
+        .leading-medicine>h1{
+            font-weight:bolder;
+            font-size: 25px;
+            font-stretch: extra-expanded;
+        }
+        .leading-medicine>p{
+            /* font-weight:lighter; */
+            font-size: 12px;
+            margin-left: 20px;
+        }
+
+        .section-two-boxes{
+            display: flex;
+            gap: 40px;
+            margin-top: 30px;
+            /* margin-right: 11vw; */
+        }
+        .box-head>img{
+            width: 3.5vw;
+            height: 3.5vw;
+            background-color: white;
+            border-radius: 50%;
+        }
+        .box-head{
+            display: flex;
+            gap: 1vw;
+            background-color: #72b9fc;
+            height: 15vh;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            width: 100%;
+            /* gap: 10px; */
+
+        }
+        .section-two-boxes>.box{
+            width: 40vh;
+            /* background-color: aquamarine; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .box-disc>a{
+            text-decoration: none;
+            color: #17acca;
+        }
+        .third{
+            background-color: #ebeff0;
+            height: 60vh;
+            margin-top: 15vh;
+    
+        }
+        .third>.review{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 65vw;
+            /* margin-top: 20vh; */
+            /* background-color: #e8eae1; */
+            /* margin-right: 220px; */
+            /* margin-top: 10vh;
+            height: 80vh;
+        */
+        }
+        .review>p{
+            width: 25vw;
+        }
+        .reviw-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            
+            /* margin: 5px; */
+
+        }
+        .reviw-box>.box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20vw;
+            margin-top: 5vh;
+            background-color: white;
+            height: 35vh;
+            border-radius: 10px;
+            
+        }
+        .reviw-box>.box>p{
+            margin-top: 7vh;
+            width: 75%;
+        }
+        .reviw-box>.box>.star-img{
+            width: 5vw;
+            margin-top: 2vh;
+        }
+        .user-img{
+            
+            margin-top: 15px;
+            margin-right: 160px;
+        }
+        .four{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0px;
+            
+            
+        }
+    
+        .faq{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        .faq-para{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0vw;
+            margin-bottom: 10vh;
+
+        }
+        .faq-para>p{
+            margin: 7px;
+            height: 5px;
+            color: #9c9595;
+        }
+        .faq-boxes>span{
+            font-weight: bold;
+
+        }
+        .faq-que{
+            width: 65vw;
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(3,1fr);
+            column-gap:160px;
+
+        }
+        .faq-boxes{
+            /* background-color:red; */
+        }
+        .pricing{
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:#f5f5f5;
+            width: 67%;
+            height: auto;
+        }
+        .price{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 50px 0px;
+            width: 50vw;
+        }
+        .price>p{
+            height: 1px;
+        }
+        .price>h1{height: 2px;}
+
+        .price-boxes{
+            display: flex;
+            gap: 5px;
+        }
+        .price-box-side{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+            height: 70vh;
+            background-color: #ffffff;
+            border: 1px solid #72b9fc;
+            border-radius: 10px;
+            width: 18vw;
+            /* height:px; */
+        }
+        .price-box-mid{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+            height: 70vh;
+            background-color: #4d6087;
+            border: 1px solid #72b9fc;
+            border-radius: 10px;
+            width: 18vw;
+            
+        }
+        .price-box-side{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+            height: 70vh;
+            background-color: #ffffff;
+            border: 1px solid #72b9fc;
+            border-radius: 10px;
+            width: 18vw;
+        }
+        .price-box-side>h3{
+            display:inline;
+            font-size: 25px;
+            height: 0px;
+            margin-top: 5vhpx;
+            /* padding-bottom: 120px; */
+            background-color: #17acca;
+        }
+
+        .price-box-mid>h3{
+            display:inline;
+            font-size: 25px;
+            height: 0px;
+            margin-top: 5vhpx;
+            /* padding-bottom: 120px; */
+            background-color: #17acca;
+        }
+
+        .price-box-side>p{
+            width: 10vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin: 20px 0px;
+            color: #3c3e40;
+        }
+        .price-box-mid>p{
+            width: 10vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin: 20px 0px;
+            color: #3c3e40;
+        }
+
+        .price-box-side>span{
+            font-weight: bold;
+            font-size: 30px;
+            color: #17acca;
+        }
+        .price-box-side>span{
+            font-weight: bold;
+            font-size: 30px;
+            color: #17acca;
+        }
+        .price-box-mid>span{
+            font-weight: bold;
+            font-size: 30px;
+            color: #17acca;
+        }
+        ul>li{
+            font-size: 20px;
+            margin: 15px 0px;
+        }
+        .price-box-mid>button{
+            background-color: #17acca;
+            border: none;
+            width: 12vw;
+            height: 6vh;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+        }
+        .price-box-side>button{
+            background-color: #17acca;
+            border: none;
+            width: 12vw;
+            height: 6vh;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+        }
+       
+        .six{
+            background-color: #324e6a;
+            display: flex;
+            margin: 80px 0px;
+            width:67vw;
+            height: 45vh;
+            color: white;
+            }
+            .get-in-touch{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+            }
+            .get-in-touch>p{
+                width: 80%;
+                margin: 0;
+            }
+
+            .subscribe{
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+            }
+            .subscribe>form{
+                background-color: #324e6a;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                /* background-color: #17acca; */
+                height: 8vh;
+                width: 20vw;
+            }
+            .subscribe>form>input{
+                width: 14vw;
+                height: 8vh;
+                border-radius: 10px;
+
+            }
+            .subscribe>form>button{
+                height: 8vh;
+                width: 9vw;
+                border-radius: 10px;
+                background-color: #17acca;
+                border: none;
+            }
+
+            .footer-boxes{
+                display: flex;
+                /* background-color: #3c3e40; */
+                width: 67vw;
+                justify-content: space-around;
+                /* color: white; */
+            }
+            .footer-box{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .footer-box>a{
+                text-decoration: none;
+                margin-bottom: 10px;
+                color: #9c9595;
+            }
+            .footer-box>p{
+                color: #9c9595;
+            }
+            .footer-user-img>img{
+                width: 3vw;
+            
+            }
+            .footer-user-img{
+                display: flex;
+                gap: 10px;
+            }
+
+
+    </style>
+</head>
+<body>
+    <div class="hee">
+
+        <!-- Section one -->
+        <section class="section-1">
+        <nav>
+            <div class="brandname">BrandNAme</div>
+                <div class="nav-bar-nav">
+                    <span>Home</span>
+                    <span>Product</span>
+                    <span>Pricing</span>
+                    <span>Contact</span>
+                </div>
+            <button>Get Quote Now →</button>
+        </nav>
+        <div class="enq" >
+            <div class="heading">
+                <h1>Meet the Best  Hospital</h1>
+                <p>We Know how large ibjects will act,but things on a small scale</p>
+                <div class="more">
+                    <button class="but-1">Get Quote</button>
+                    <button class="but-2">Learn More</button>
+                </div>
+                
+            </div>
+            <div class="form">
+                <h1>Book Appointment</h1>
+                <form action="get">
+                    <label for="">Name</label>
+                    <input type="text" placeholder="Full NAme *">
+
+                    <label for="">Email address</label>
+                    <input type="email" placeholder="Email">
+                    
+                    <label for="">Department</label>
+                    <input type="text" placeholder="Department">
+
+                    <label for="">Time</label>
+                    <input type="time" placeholder="time">
+                    <button>Book Appointment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Two -->
+     <section class="section-two">
+        <div class="leading-medicine">
+            <h1>Leading Medicine</h1>
+            <p>Problems trying to resolve the conflict between the two majore realms of Classical 
+                physics : Newtonian mechanics
+            </p>
+        </div>
+        <div class="section-two-boxes">
+
+            <div class="box-1 box">
+                <div class="box-head">
+                    <img src="assets/user.png" alt="">
+                    <span>Emergency Case</span>
+                </div>
+                <div class="box-disc">
+                    <p>The best products start with Figma</p>
+                    <p>Design with real data</p>
+                    <p>Lightning fast prototyping</p>
+                    <p>Fastest way to orgnaize</p>
+                    <p>Work at the speed of thought.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+            <div class="box-2 box">
+                <div class="box-head">
+                    <img src="assets/user.png" alt="">
+                    <span>Cancer care</span>
+                </div>
+                <div class="box-disc">
+                    <p>The best products start with Figma</p>
+                    <p>Design with real data</p>
+                    <p>Lightning fast prototyping</p>
+                    <p>Fastest way to orgnaize</p>
+                    <p>Work at the speed of thought.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+            <div class="box-3 box">
+                <div class="box-head">
+                    <img src="assets/user.png" alt="">
+                    <span>Health Queries</span>
+                </div>
+                <div class="box-disc">
+                    <p>The best products start with Figma</p>
+                    <p>Design with real data</p>
+                    <p>Lightning fast prototyping</p>
+                    <p>Fastest way to orgnaize</p>
+                    <p>Work at the speed of thought.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </section>
+     
+<!-- Section-three... -->
+     <section class="third">
+        <div class="review">
+            <h1>Leading Medicine</h1>
+            <p>Problems trying to resolve the conflict between the two major realms of Classical 
+                physics: Newtonian mechanics
+            </p>
+        </div>
+        <div class="reviw-box">
+            <div class="box">
+                <img class="star-img" src="assets/—Pngtree—five star rating design_15415324.png" alt="">
+                <p>State helps you see how many more days you need to Work to reach your financial
+                    goal
+                </p>
+                <img class="user-img" src="assets/user.png" alt="">
+            </div>
+            <div class="box">
+                <img class="star-img" src="assets/—Pngtree—five star rating design_15415324.png" alt="">
+                <p>State helps you see how many more days you need to Work to reach your financial
+                    goal
+                </p>
+                <img class="user-img" src="assets/user.png" alt="">
+            </div>
+            <div class="box">
+                <img class="star-img" src="assets/—Pngtree—five star rating design_15415324.png" alt="">
+                <p>State helps you see how many more days you need to Work to reach your financial
+                    goal
+                </p>
+                <img class="user-img" src="assets/user.png" alt="">
+            </div>
+        </div>
+     </section>
+
+     <!-- Section-Four -->
+     <section class="four">
+        <div class="faq">
+            <h1>FAQ</h1>
+            <div class="faq-para">
+                <p>Problems trying to resolve the conflict between </p>
+                <p>the two majore realms of Classical 
+                    physics : Newtonian mechanics</p>
+                </div>
+        </div>
+        <div class="faq-que">
+
+            <div class="faq-boxes">
+                <span> the quick fox jumps over the lazy dog</span>
+                <p>Things on avery small scale behave like nothing</p>
+            </div>
+            <div class="faq-boxes">
+                <span> the quick fox jumps over the lazy dog</span>
+                <p>Things on avery small scale behave like nothing</p>
+            </div>
+            <div class="faq-boxes">
+                <span> the quick fox jumps over the lazy dog</span>
+                <p>Things on avery small scale behave like nothing</p>
+            </div>
+            <div class="faq-boxes">
+                <span> the quick fox jumps over the lazy dog</span>
+                <p>Things on avery small scale behave like nothing</p>
+            </div>
+            <div class="faq-boxes">
+                <span>the quick fox jumps over the lazy dog</span>
+                <p>Things on avery small scale behave like nothing</p>
+            </div>
+            <div class="faq-boxes">
+                <span> the quick fox jumps over the lazy dog</span>
+                <p>Things on avery small scale behave like nothing</p>
+            </div>
+            <div class="faq-boxes">
+                <span> the quick fox jumps over the lazy dog</span>
+                <p>Things on avery small scale behave like nothing</p>
+            </div>
+            <div class="faq-boxes">
+                <span> the quick fox jumps over the lazy dog</span>
+                <p>Things on avery small scale behave like nothing</p>
+            </div>
+            <div class="faq-boxes">
+                <span> the quick fox jumps over the lazy dog</span>
+                <p>Things on avery small scale behave like nothing</p>
+            </div>
+        </div>
+
+     </section>
+
+     <!-- Fifth section -->
+      <section class="pricing">
+        <div class="price">
+            <h1>Pricing</h1>
+            <p class="para">Problems teying to resolve the conflict between </p>
+            <p>the two major realms of Classical physics Newtonian mechanics</p>
+        </div>
+        <div class="price-boxes">
+            <div class="price-box-side">
+                <h3>FREE</h3>
+                <p>Organize across all apps by hand</p>
+                <span> 0 <sup>$</sup><sub>Per Month</sub></span>
+                <ul>
+                    <li>Unlimited product updates</li>
+                    <li>Unlimited product updates</li>
+                    <li>Unlimited product updates</li>
+                    <li>1GB CLoud storage</li>
+                    <li>Email and community support</li>
+                </ul>
+                <button>Try for Free</button>
+
+            </div>
+            <div class="price-box-mid">
+                <h3>STANDARD</h3>
+                <p>Organize across all apps by hand</p>
+                <span>9.99<sup>$</sup><sub>Per Month</sub></span>
+                <ul>
+                    <li>Unlimited product updates</li>
+                    <li>Unlimited product updates</li>
+                    <li>Unlimited product updates</li>
+                    <li>1GB CLoud storage</li>
+                    <li>Email and community support</li>
+                </ul>
+                <button>Try for free</button>
+            </div>
+            <div class="price-box-side">
+                <h3>PREMIUM</h3>
+                <p>Organize across all apps by hand</p>
+                <span>19.99 <sup>$</sup><sub>Per Month</sub></span>
+                <ul>
+                    <li>Unlimited product updates</li>
+                    <li>Unlimited product updates</li>
+                    <li>Unlimited product updates</li>
+                    <li>1GB CLoud storage</li>
+                    <li>Email and community support</li>
+                </ul>
+                <button>Try for free</button>
+            </div>
+        </div>
+      </section>
+      <!-- Section six -->
+       <section class="six">
+        <div class="get-in-touch">
+            <h1>Get In Touch</h1>
+            <p>The gradual accumulation of information about atomic and small scale behaviour
+                during the first quarter of the 20th
+            </p>
+        </div>
+        <div class="subscribe">
+            <form action="get" class="form">
+                <input type="email" placeholder="Your Email">
+                <button>Subscribe</button>
+            </form>
+        </div>
+       </section>
+       <!-- section footer -->
+        <footer>
+            <div>
+
+                <div class="footer-boxes">
+                    <div class="footer-box-1 footer-box">
+                        <h3>Get In Touch </h3>
+                    <p>the quick fox jumps over the lazy dog</p>
+                    <div class="footer-user-img">
+                        <img src="assets/user.png" alt="">
+                        <img src="assets/user.png" alt="">
+                        <img src="assets/user.png" alt="">
+                    </div>
+                </div>
+
+                <div class="footer-box footer-box">
+                    <h3>Comapany info</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Carries</a>
+                    <a href="#">We are hiring </a>
+                    <a href="#">Blog</a>
+                </div>
+
+                <div class="footer-box footer-box">
+                    <h3>Features</h3>
+                    <a href="#">Buisness Marketing</a>
+                    <a href="#">User Analytic</a>
+                    <a href="#">Live Chat</a>
+                    <a href="#">Unlimited Supoort</a>
+                </div>
+                
+                <div class="footer-box footer-box">
+                    <h3>Resources</h3>
+                    <a href="#">IOS & Android</a>
+                    <a href="#">Watch aDEmo</a>
+                    <a href="#">Customers</a>
+                    <a href="#">API</a>
+                </div>
+            </div>
+        </div>
+        </footer>
+    </div>
+</body>
+</html>
